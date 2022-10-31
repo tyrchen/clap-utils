@@ -1,0 +1,31 @@
+[package]
+name = "cli-utils"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+documentation = "https://docs.rs/cli-utils"
+repository = "https://github.com/tyrchen/cli-utils"
+homepage = "https://github.com/tyrchen/cli-utils"
+description = """
+A collection of utilities for building command line applications.
+"""
+readme = "README.md"
+categories = ["command-line-utilities"]
+keywords = ["clap", "utility"]
+
+[dependencies]
+anyhow = "1.0.66"
+async-trait = "0.1.58"
+atty = "0.2.14"
+clap = { version = "3", features = ["derive"] }
+clap_complete = "3"
+dialoguer = { version = "0.10.2", features = ["completion", "fuzzy-matcher", "fuzzy-select", "history"] }
+enum_dispatch = "0.3.8"
+error-stack = { version = "0.2.3", features = ["anyhow"] }
+paste = "1.0.9"
+strum = { version = "0.24.1", features = ["derive"] }
+syntect = "5.0.0"
+
+[dev-dependencies]
+insta = "1.21.0"
+serde_json = "1.0.87"
