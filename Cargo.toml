@@ -1,11 +1,11 @@
 [package]
-name = "cli-utils"
+name = "clap-utils"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-documentation = "https://docs.rs/cli-utils"
-repository = "https://github.com/tyrchen/cli-utils"
-homepage = "https://github.com/tyrchen/cli-utils"
+documentation = "https://docs.rs/clap-utils"
+repository = "https://github.com/tyrchen/clap-utils"
+homepage = "https://github.com/tyrchen/clap-utils"
 description = """
 A collection of utilities for building command line applications.
 """
