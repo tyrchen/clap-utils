@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.0] - 2022-11-01
+
+### Bug Fixes
+
+- Remove the dependency to error-stack, use pure anyhow for error reporting ([6d9247b](6d9247b86d84281a2d118a9249f832e1c26dcf12) - 2022-11-02 by Tyr Chen)
+
 ## [0.1.0] - 2022-10-31
 
 ### Features

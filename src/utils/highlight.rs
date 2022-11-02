@@ -1,4 +1,3 @@
-use error_stack::IntoReportCompat;
 use std::fmt;
 use std::fmt::Write as _;
 use std::io::Stdout;
@@ -20,13 +19,9 @@ impl Highlight for Stdout {
         theme: Option<&str>,
     ) -> Result<(), crate::Error> {
         if atty::is(atty::Stream::Stdout) {
-            writeln!(self, "{}", highlight_text(text, extension, theme)?)
-                .map_err(Into::into)
-                .into_report()?;
+            writeln!(self, "{}", highlight_text(text, extension, theme)?)?;
         } else {
-            writeln!(self, "{}", text)
-                .map_err(Into::into)
-                .into_report()?;
+            writeln!(self, "{}", text)?;
         }
 
         Ok(())
@@ -54,9 +49,7 @@ pub fn highlight_text(
     for line in LinesWithEndings::from(text) {
         let ranges = h.highlight_line(line, &ps).unwrap();
         let escaped = as_24_bit_terminal_escaped(&ranges[..], false);
-        write!(&mut output, "{}", escaped)
-            .map_err(Into::into)
-            .into_report()?;
+        write!(&mut output, "{}", escaped)?;
     }
 
     Ok(output)

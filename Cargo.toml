@@ -1,6 +1,6 @@
 [package]
 name = "clap-utils"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 license = "MIT"
 documentation = "https://docs.rs/clap-utils"
@@ -21,7 +21,6 @@ clap = { version = "3", features = ["derive"] }
 clap_complete = "3"
 dialoguer = { version = "0.10.2", features = ["completion", "fuzzy-matcher", "fuzzy-select", "history"] }
 enum_dispatch = "0.3.8"
-error-stack = { version = "0.2.3", features = ["anyhow"] }
 paste = "1.0.9"
 strum = { version = "0.24.1", features = ["derive"] }
 syntect = "5.0.0"

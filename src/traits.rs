@@ -1,5 +1,4 @@
 use crate::prelude::*;
-use error_stack::IntoReportCompat;
 use std::io::Write;
 
 macro_rules! highlight_ext {
@@ -23,21 +22,4 @@ pub trait Highlight: Write {
     }
 
     highlight_ext!(json, yaml, toml, xml, html, css, js, rs, py, rb, sh, md, txt);
-}
-
-pub trait ToReport {
-    type Ok;
-    type Err;
-    fn report(self) -> Result<Self::Ok, Error>;
-}
-
-impl<T, E> ToReport for core::result::Result<T, E>
-where
-    E: Into<Error>,
-{
-    type Ok = T;
-    type Err = E;
-    fn report(self) -> Result<T, Error> {
-        self.map_err(Into::into).into_report()
-    }
 }
