@@ -6,7 +6,7 @@ pub use traits::*;
 pub use utils::*;
 
 // re-export
-pub use anyhow::{self, bail, Context, Error, Result};
+pub use anyhow::{self, bail, ensure, Context, Error, Result};
 pub use async_trait::async_trait;
 pub use atty;
 pub use clap::{self, Parser};
