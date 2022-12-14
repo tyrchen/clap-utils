@@ -1,6 +1,6 @@
 [package]
 name = "clap-utils"
-version = "0.2.1"
+version = "0.3.0"
 edition = "2021"
 license = "MIT"
 documentation = "https://docs.rs/clap-utils"
@@ -13,18 +13,22 @@ readme = "README.md"
 categories = ["command-line-utilities"]
 keywords = ["clap", "utility"]
 
+[features]
+default = []
+highlight = ["syntect"]
+
 [dependencies]
 anyhow = "1.0.66"
-async-trait = "0.1.58"
+async-trait = "0.1.59"
 atty = "0.2.14"
-clap = { version = "3", features = ["derive"] }
-clap_complete = "3"
+clap = { version = "3.2.23", features = ["derive"] }
+clap_complete = "3.2.5"
 dialoguer = { version = "0.10.2", features = ["completion", "fuzzy-matcher", "fuzzy-select", "history"] }
 enum_dispatch = "0.3.8"
-paste = "1.0.9"
+paste = "1.0.10"
 strum = { version = "0.24.1", features = ["derive"] }
-syntect = "5.0.0"
+syntect = { version = "5.0.0", optional = true }
 
 [dev-dependencies]
-insta = "1.21.0"
-serde_json = "1.0.87"
+insta = "1.23.0"
+serde_json = "1.0.89"
