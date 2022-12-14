@@ -2,11 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.2.0] - 2022-11-01
+## [0.3.0] - 2022-12-14
+
+[2ed48b1](2ed48b1f71d9613704158d64b6eb710fd908bee5)...[467249e](467249e354cce87dc19eabbe3f4293e6c57d42b8)
+
+### Features
+
+- Move highlight related logic into its own feature so syntect could be an optional dep ([467249e](467249e354cce87dc19eabbe3f4293e6c57d42b8) - 2022-12-14 by Tyr Chen)
+
+## [0.2.0] - 2022-11-02
+
+[8e9f74c](8e9f74cd0b79066404eab92b62600d2947ab040c)...[9b23541](9b235416d2a28c1ef17d84d1acc28c81df7889cb)
 
 ### Bug Fixes
 
-- Remove the dependency to error-stack, use pure anyhow for error reporting ([6d9247b](6d9247b86d84281a2d118a9249f832e1c26dcf12) - 2022-11-02 by Tyr Chen)
+- Remove the dependency to error-stack, use pure anyhow for error reporting ([9b23541](9b235416d2a28c1ef17d84d1acc28c81df7889cb) - 2022-11-02 by Tyr Chen)
 
 ## [0.1.0] - 2022-10-31
 
