@@ -1,6 +1,6 @@
 [package]
 name = "clap-utils"
-version = "0.3.0"
+version = "0.3.1"
 edition = "2021"
 license = "MIT"
 documentation = "https://docs.rs/clap-utils"
@@ -18,17 +18,17 @@ default = []
 highlight = ["syntect"]
 
 [dependencies]
-anyhow = "1.0.66"
-async-trait = "0.1.59"
+anyhow = "1.0.68"
+async-trait = "0.1.61"
 atty = "0.2.14"
-clap = { version = "3.2.23", features = ["derive"] }
-clap_complete = "3.2.5"
+clap = { version = "3", features = ["derive"] }
+clap_complete = "3"
 dialoguer = { version = "0.10.2", features = ["completion", "fuzzy-matcher", "fuzzy-select", "history"] }
-enum_dispatch = "0.3.8"
-paste = "1.0.10"
+enum_dispatch = "0.3.10"
+paste = "1.0.11"
 strum = { version = "0.24.1", features = ["derive"] }
 syntect = { version = "5.0.0", optional = true }
 
 [dev-dependencies]
-insta = "1.23.0"
-serde_json = "1.0.89"
+insta = "1.26.0"
+serde_json = "1.0.91"
