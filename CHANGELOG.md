@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.1] - 2024-05-11
+
+[c25b99f](c25b99ffd63a18c0e0d5491e54069b85c99d7141)...[7ea971c](7ea971cc6bc92e0755cc5b6a9961aecb13b3dd6e)
+
+### Miscellaneous Tasks
+
+- Bump version for deps ([7ea971c](7ea971cc6bc92e0755cc5b6a9961aecb13b3dd6e) - 2024-05-11 by Tyr Chen)
+
 ## [0.3.0] - 2022-12-14
 
 [2ed48b1](2ed48b1f71d9613704158d64b6eb710fd908bee5)...[467249e](467249e354cce87dc19eabbe3f4293e6c57d42b8)
