@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.2] - 2024-11-18
+
+[7ea971c](7ea971cc6bc92e0755cc5b6a9961aecb13b3dd6e)...[580514e](580514ebe3c2b95965fb125cc5ede05316bcdf76)
+
+### Miscellaneous Tasks
+
+- Upgrade deps ([580514e](580514ebe3c2b95965fb125cc5ede05316bcdf76) - 2024-11-18 by Tyr Chen)
+
 ## [0.4.1] - 2024-05-11
 
 [c25b99f](c25b99ffd63a18c0e0d5491e54069b85c99d7141)...[7ea971c](7ea971cc6bc92e0755cc5b6a9961aecb13b3dd6e)
